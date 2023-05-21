@@ -1,10 +1,5 @@
 
 
-// arguments 
-export interface noteArgumentsInterface {
-    note_id: number
-}
-
 export interface noteCardComponentInterface {
     name: string,
     text: string,
@@ -14,13 +9,13 @@ export interface noteCardComponentInterface {
 }
 
 export interface NoteInterface {
-    id: number,
-    created_by: string, 
-    current_owner: string,
-    file_name: string,
+    id?: number,
+    created_by?: string, 
+    current_owner?: string,
+    file_name?: string,
     text: string,
     content: string,
-    created_at: string,
-    updated_at: string,
-    is_deleted: string,
+    created_at?: string,
+    updated_at?: string,
+    is_deleted?: boolean,
 }
